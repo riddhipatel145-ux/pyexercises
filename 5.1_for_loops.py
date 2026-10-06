@@ -24,32 +24,18 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What I compute for each item, and why it is worth showing:
+# 1. In: The list of eight monthly procurement budgets from Exercise 4.0.
+# 2. Process: Go through each budget and compare it with $12000.
+# 3. Out: One line for each budget showing its position, amount and whether it is above or beloe $12000.
+# 4. What I compute for each item, and why it is worth showing: I compute if each budget is above or below $12000.
 
 
 # Your code below
 
-print("Name")
-print("Name")
-print("Name")
-print("Name")
-print("Name")
+budgets = [12000, 9500, 15000, 11000, 13500, 10000, 16000, 12500]
 
-print("With loop")
-for i in range(1,5):
-    print("Name")
-
-list_names = ["ridhi", "vlada", "Dev", "trupti"]
-
-print (list_names[0])
-print (list_names[1])
-print (list_names[2])
-print (list_names[3])
-
-print("with for loop")
-
-for name in list_names:
-    print(name)
+for position, budget in enumerate(budgets, start=1):
+    if budget >= 12000:
+        print(position, budget, "Above or equal to $12000")
+    else:
+        print(position, budget, "Below $12000")

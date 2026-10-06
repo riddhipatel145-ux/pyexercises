@@ -23,18 +23,33 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My object, my five fields, and why those:
+# 1. In: Information about one product.
+# 2. Process: Store the product information in a dictionary, read it, change one field, remove one field, and display all the fields.
+# 3. Out: The product information with the changes displayed.
+# 4. My object, my five fields, and why those: My object is a product. I chose name. price, category, brand, and stock because these are useful information about a product.
 
 
 # Your code below
-person = (
-    "name": "Ridhi",
-    "age": "30",
-    "city": "New York"
+product = {
+    "name": "Chocolate",
+    "price": 2.50,
+    "Category": "Food",
+    "brand": "Lindt",
+    "stock": 20
 }
-print("name:", person["name"])
-print("age:", age["age"])
-print("city:", city["city"])
+
+# Read a field
+print("Product name:", product["name"])
+
+# Change a field
+product["price"] = 3.00
+
+# Remove one field
+del product["stock"]
+
+# Ask for a field that does not exit 
+print("Color:", product.get("color", "Field does not exist"))
+
+# Display every field with its value
+for field, value in product.items():
+    print(field, ":", value)

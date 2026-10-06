@@ -26,26 +26,29 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In: A list of 8 numbers
-# 2. Process: How to do this
-# 3. Out: How to remove number, add number and make the list in sorted number
-# 4. What my list is about, and what I computed from it: Numbers
+# 1. In: A list of eight monthly procurement budgets.
+# 2. Process: Create the list, diplay it, choose one budget, sort the list, and calculate the total.
+# 3. Out: The complete list, one budget, the sorted list, and the total budget.
+# 4. What my list is about, and what I computed from it: My list is about monthly procurement budgets. I computed the total because it shows the overall budget for the eight months. 
 
 
 # Your code below
-list1 = [5,6,7,8,1,2,3,4]
+# Cretae a list of monthly procurement budgets.
+list1 = [1200, 1500, 1100, 1800, 1400, 1600, 1300, 1700]
 
 print(list1)
+
+# Choose one budget from the list.
 num = list1[5]
 
 print(num)
 
-# sorting the list
+# sorting the list.
 sorted_list = list1.sort()
 
 print("The sorted list is:", list1)
 
-# removing the last number from the list
-list1.pop()
+# Calculate the total of the budgets.
+total = sum(list1)
 
-print("The last number removed:", list1)
+print("The total budget is:", total )

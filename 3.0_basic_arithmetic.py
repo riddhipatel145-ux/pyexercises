@@ -24,28 +24,28 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What happens when the second number is zero, and why:
+# 1. In: two numbers entered by the user
+# 2. Process: perform addition, subtraction, multiplication and division using the two numbers
+# 3. Out: the results of the four arithmetic oeperations
+# 4. What happens when the second number is zero, and why: Display a message instead of dividing because division by zero is not possible.
 
 
 # Your code below
-number1 = float(input("Enter a number 1:"))
-number2 = float(input("Enter a number 2:"))
-
-sum = number1+number2
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+sum = num1 + num2
 
 print(sum)
 
-# difference of two numbers
-diff = (number1 - number2)
-product = number1 * number2
-print("The difference between two numbers is:", diff)
-print("The Product of two numbers is:", product)
+subtraction = num1 - num2
+print(subtraction)
 
-if number2 != 0:
-    division = number1/number2
-    Print("The division of two numbers:", division)
+multiplication = num1 * num2
+print(multiplication)
+
+if num2 == 0:
+    print("Division is not possible because we can not devide by zero.")
 else:
-    print ("the number is o")
+    division = num1 / num2
+    print(division)
+# check: with 0 and 7, the program calculated the first three operations and displayed a message instead of deviding by zero.
